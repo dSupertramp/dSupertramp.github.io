@@ -1,0 +1,145 @@
+:root {
+  --background: #fee715ff;
+  --font: #101820ff;
+  --cv-link: #02bbe5;
+}
+
+* {
+  font-family: "Roboto Mono", monospace;
+  background-color: var(--background);
+  color: var(--font);
+
+  a {
+    text-decoration: None;
+    color: var(--cv-link);
+  }
+}
+
+#main {
+  font-size: 8vw;
+  padding-left: 80px;
+}
+
+#otherTypewrite {
+  font-size: 1.5vh;
+
+  // Desktop
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    font-size: 3vh;
+  }
+}
+
+#aboutme {
+  font-size: 1.2vh;
+  padding-left: 5%;
+
+  // Desktop
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    font-size: 1vw;
+    padding-left: 2%;
+  }
+}
+
+.title {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 8vw;
+
+  // Desktop
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    font-size: 5vw;
+  }
+}
+
+#experience {
+  font-size: 3vw;
+
+  // Desktop
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    font-size: 1vw;
+  }
+}
+
+#skills {
+  i {
+    font-size: 3vw;
+  }
+}
+
+#contacts {
+  text-align: center;
+  font-size: 4vw;
+
+  a {
+    >i {
+      z-index: 0;
+      font-size: 12vw;
+      padding: 15px;
+    }
+  }
+
+  #mail {
+    color: #c71610;
+
+    &:hover {
+      animation: jello 1s infinite ease-in-out;
+    }
+  }
+
+  #github {
+    color: #24292e;
+
+    &:hover {
+      animation: rubberBand 1s infinite ease-in-out;
+    }
+  }
+
+  #linkedin {
+    color: #0e76a8;
+
+    &:hover {
+      animation: tada 1s infinite ease-in-out;
+    }
+  }
+
+  #quora {
+    color: #a82400;
+
+    &:hover {
+      animation: headShake 1s infinite ease-in-out;
+    }
+  }
+
+  #stackoverflow {
+    color: #f2740d;
+
+    &:hover {
+      animation: swing 1s infinite ease-in-out;
+    }
+  }
+}
+
+@keyframes slideAndFade {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  55%,
+  95% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+#arrows {
+  animation: slideAndFade 2s infinite;
+}
