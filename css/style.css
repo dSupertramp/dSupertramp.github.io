@@ -40,6 +40,17 @@
   }
 }
 
+#projects {
+  font-size: 2vh;
+  padding-left: 5%;
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  #projects {
+    font-size: 1.5vw;
+    padding-left: 2%;
+  }
+}
+
 .title {
   position: absolute;
   top: 8px;
