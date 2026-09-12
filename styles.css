@@ -44,12 +44,18 @@ body {
   background-image:
     linear-gradient(rgba(7, 14, 23, 0.74), rgba(7, 14, 23, 0.74)),
     url('assets/bg.svg');
-  background-position: center top;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   color: #e5e7eb;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-attachment: scroll;
+  }
 }
 
 body::before {
